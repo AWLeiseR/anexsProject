@@ -1,38 +1,161 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerStyle{
+    text-align: center;
+    font-size: 50px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*.figuresContainer{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.figure{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    margin:-10px;
+    overflow: hidden;
+    background-color: blue;
+    display: flex;
+    align-self: flex-end;
+}*/
+
+/*pagina forms*/
+.pageForms{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);  
+
 }
 
-.App-link {
-  color: #61dafb;
+/* forms*/
+.formsStyle{
+    width: 60%;
+    display: flex;
+    flex-direction: column; 
+     
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputs{
+  
+  height: 20px;
+  
+  margin-bottom: 20px;
+  border:none;
+  border-bottom:2px solid #000;
+  outline: none;
+  background: none;
+}
+
+.titleData{
+    font-weight: bold;
+}
+
+.mensagemInput{
+    width: 100%;
+    height: 85px;
+    margin: 0px;
+    resize: none;
+    border: none;
+    border-bottom:2px solid #000;
+    outline: none;
+    background: none;
+}
+
+.buttonFormsStyle{
+    display: flex;
+    align-self: flex-end;
+}
+
+.imageStyle{
+    position:absolute;
+    z-index: -1;
+    
+    transform: rotate(3deg);
+    width: 80%;
+    height: 80%;
+}
+
+/* pagina de agradecimento */
+.divModal{
+   
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: auto;
+}
+
+.divInfoModal{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.imageInfoStyle{
+    position:absolute;
+    z-index: -1;
+    align-self: flex-end;
+    transform: rotate(3deg);
+    width: 20%;
+    height:20%;
+}
+
+/* estilização botão*/
+.buttonStyle{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border: 1px black solid ;
+    background-color: rgb(255, 255, 255);
+}
+
+.buttonStyle:hover {
+    color:white;
+    background-color: black;
+
+}
+
+/* estilização linha e coluna*/
+
+.divRow{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.divColumn{
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.divRow div{
+    margin-right: 20%;
+}
+
+.divColumn p {
+    margin: 5px;
 }
